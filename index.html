@@ -1,0 +1,459 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Harshit Moondra | Robotics Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #f5f7fa;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 3rem;
+        }
+
+        header p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.15rem;
+        }
+
+        nav {
+            background: white;
+            padding: 16px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        nav a {
+            margin: 0 14px;
+            color: #111827;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 70px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            background: white;
+            padding: 28px;
+            margin-bottom: 28px;
+            border-radius: 14px;
+            box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+        }
+
+        .project h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .project-links {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 6px 8px 6px 0;
+            padding: 10px 16px;
+            background: #111827;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .button.secondary {
+            background: #374151;
+        }
+
+        .button.light {
+            background: #e5e7eb;
+            color: #111827;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            margin-top: 24px;
+            overflow: hidden;
+            border-radius: 10px;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            left: 0;
+            top: 0;
+        }
+
+        .publication {
+            background: white;
+            padding: 22px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Harshit Moondra</h1>
+
+    <p>
+        Robotics researcher working on robot learning, model predictive control,
+        imitation learning, reinforcement learning, and autonomous systems.
+    </p>
+
+    <div style="margin-top: 24px;">
+        <a class="button"
+           href="assets/pdfs/Harshit_Moondra_CV.pdf"
+           target="_blank">
+            View CV
+        </a>
+
+        <a class="button secondary"
+           href="https://github.com/MoondraHarshit"
+           target="_blank">
+            GitHub
+        </a>
+
+        <a class="button secondary"
+           href="YOUR_LINKEDIN_URL"
+           target="_blank">
+            LinkedIn
+        </a>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am an M.S. Engineering student specializing in Robotics at Purdue
+            University and a Graduate Research Assistant in the SCALE Robotics Lab.
+            My interests include robot learning, model predictive control,
+            multi-agent reinforcement learning, mobile manipulation, and autonomous systems.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+
+        <!-- PROJECT 1 -->
+        <div class="project">
+            <h3>MPC + Residual Reinforcement Learning for Quadrupedal Robots</h3>
+
+            <p>
+                A hybrid locomotion framework combining convex model predictive
+                control with a Soft Actor-Critic residual policy for the Unitree A1
+                quadruped in MuJoCo.
+            </p>
+
+            <p>
+                The learned policy outputs foothold corrections and joint torque
+                residuals to augment the analytical controller on rough terrain.
+            </p>
+
+            <div class="video-container">
+                <iframe
+                    src="https://www.loom.com/embed/61e29c30453e4cf2b644d1ac06a6d165"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="project-links">
+                <a class="button"
+                   href="https://github.com/MoondraHarshit/Composing-Control-Policies-MPC-using-RL-for-Quadrupedal-Robots"
+                   target="_blank">
+                    GitHub Repository
+                </a>
+
+                <a class="button secondary"
+                   href="assets/pdfs/Quadruped_Report.pdf"
+                   target="_blank">
+                    Read Report
+                </a>
+
+                <a class="button light"
+                   href="YOUR_GOOGLE_DRIVE_FOLDER_LINK"
+                   target="_blank">
+                    Additional Resources
+                </a>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project">
+            <h3>Benchmarking GAIL Against Imitation-Learning Baselines</h3>
+
+            <p>
+                A PyTorch benchmarking study comparing Generative Adversarial
+                Imitation Learning, DAgger, Behavioral Cloning, and PPO under
+                noisy expert demonstrations.
+            </p>
+
+            <p>
+                Replace this paragraph with your main quantitative result and the
+                environments used in the study.
+            </p>
+
+            <div class="project-links">
+                <a class="button"
+                   href="https://github.com/MoondraHarshit/Benchmarking-GAIL-with-baselines"
+                   target="_blank">
+                    GitHub Repository
+                </a>
+
+                <a class="button secondary"
+                   href="assets/pdfs/GAIL_Report.pdf"
+                   target="_blank">
+                    Read Report
+                </a>
+
+                <a class="button light"
+                   href="YOUR_GAIL_VIDEO_OR_DRIVE_LINK"
+                   target="_blank">
+                    Demo or Resources
+                </a>
+            </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project">
+            <h3>MIST: Fault-Adaptive Multi-Drone Payload Transport</h3>
+
+            <p>
+                A multi-agent reinforcement-learning framework using a GRU-based
+                context encoder to infer actuator faults during cooperative
+                multi-drone payload transport.
+            </p>
+
+            <p>
+                Replace this paragraph with your strongest result, such as the
+                comparison with MAPPO and MADDPG or the reduction in performance variance.
+            </p>
+
+            <div class="project-links">
+                <a class="button"
+                   href="https://github.com/MoondraHarshit/MIST"
+                   target="_blank">
+                    GitHub Repository
+                </a>
+
+                <a class="button secondary"
+                   href="assets/pdfs/MIST_Report.pdf"
+                   target="_blank">
+                    Read Report
+                </a>
+
+                <a class="button light"
+                   href="YOUR_MIST_VIDEO_OR_DRIVE_LINK"
+                   target="_blank">
+                    Demo or Resources
+                </a>
+            </div>
+        </div>
+
+        <!-- COPY THIS BLOCK TO ADD ANOTHER PROJECT -->
+        <!--
+        <div class="project">
+            <h3>PROJECT TITLE</h3>
+
+            <p>
+                Write a short description of the problem, method, and result.
+            </p>
+
+            <div class="project-links">
+                <a class="button"
+                   href="YOUR_GITHUB_REPOSITORY_LINK"
+                   target="_blank">
+                    GitHub Repository
+                </a>
+
+                <a class="button secondary"
+                   href="assets/pdfs/YOUR_REPORT.pdf"
+                   target="_blank">
+                    Read Report
+                </a>
+
+                <a class="button light"
+                   href="YOUR_VIDEO_OR_DRIVE_LINK"
+                   target="_blank">
+                    Demo or Resources
+                </a>
+            </div>
+        </div>
+        -->
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+
+        <div class="publication">
+            <h3>YOUR IEEE PAPER TITLE</h3>
+
+            <p>
+                Harshit Moondra, Additional Authors
+            </p>
+
+            <p>
+                IEEE INDISCON 2025 — Best Paper Award
+            </p>
+
+            <a class="button"
+               href="YOUR_PAPER_LINK"
+               target="_blank">
+                View Published Paper
+            </a>
+
+            <!-- Use this instead if you upload the paper as a PDF:
+            <a class="button"
+               href="assets/pdfs/IEEE_Paper.pdf"
+               target="_blank">
+                Read Paper
+            </a>
+            -->
+        </div>
+
+        <!-- COPY THIS BLOCK TO ADD ANOTHER PUBLICATION -->
+        <!--
+        <div class="publication">
+            <h3>PAPER TITLE</h3>
+
+            <p>Authors</p>
+            <p>Conference or Journal, Year</p>
+
+            <a class="button"
+               href="PAPER_URL_OR_PDF_PATH"
+               target="_blank">
+                View Paper
+            </a>
+        </div>
+        -->
+    </section>
+
+    <section id="research">
+        <h2>Research Experience</h2>
+
+        <div class="project">
+            <h3>SCALE Robotics Lab, Purdue University</h3>
+
+            <p>
+                Graduate Research Assistant working on robot learning,
+                mobile manipulation, safe control, and multi-agent robotic systems.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Robotics Lab, IIT Madras</h3>
+
+            <p>
+                Conducted research on multi-medium robotic systems,
+                biomimetic pressure hulls, fluid dynamics, and aerial-aquatic robotics.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+            Email:
+            <a href="mailto:hmoondra@purdue.edu">
+                hmoondra@purdue.edu
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/MoondraHarshit" target="_blank">
+                github.com/MoondraHarshit
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="YOUR_LINKEDIN_URL" target="_blank">
+                View LinkedIn Profile
+            </a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Harshit Moondra</p>
+</footer>
+
+</body>
+</html>
+```
